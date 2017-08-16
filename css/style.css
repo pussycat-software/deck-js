@@ -23,6 +23,10 @@
   background: #008833;
 }
 
+.deck .card:hover {
+  cursor: pointer;
+}
+
 .card {
   display: inline-block;
   width: 160px;
@@ -33,13 +37,15 @@
   font-size: 100px;
   font-family: Georgia, "Times New Roman", serif;
   text-align: center;
+
+  background: rgba(255, 255, 255, 0);
 }
 
 .card:hover {
   box-shadow: 3px 3px 16px rgba(0,0,0,0.3);
 }
 
-.face:hover {
+.face {
   background-color: #fff;
 }
 

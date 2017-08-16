@@ -66,7 +66,19 @@ function draw_actual(card) {
 }
 
 function draw_left(count) {
-  $( ".deck .card" ).text(count);
+  if (deck_id) {
+    $(".deck").html('<div class="card back left">' + left + '</div>');
+  } else {
+    $(".deck").html('<div class="card left">0</div>');
+  }
+
+  $(".deck .left").click(function() {
+    if (deck_id) {
+      deck_resume(deck_id);
+    } else {
+      deck_id = deck_new();
+    }
+  });
 }
 
 function draw_history(card) {
@@ -81,7 +93,7 @@ function draw_history(card) {
   }
 }
 
-$( ".deck .card" ).click(function() {
+$(".deck .left").click(function() {
   if (deck_id) {
     deck_resume(deck_id);
   } else {
