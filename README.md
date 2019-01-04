@@ -2,6 +2,8 @@
 
 HTML + JavaScript page to ease dealing virtual deck of cards.
 
+See demo at [GitHub Pages](https://pussycat-software.github.io/deck-js/index.html).
+
 # Usage
 
 Edit `./js/script.js`:
